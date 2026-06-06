@@ -51,6 +51,15 @@ overflow-x:hidden;
   bottom:-180px;
 }
 
+.hero-main {
+    display:flex;
+  flex-direction:column;
+  min-height:70vh;
+  justify-content:center;
+  align-items:center;
+  padding: 140px 20px 80px;
+}
+
 .hero-card {
   background: rgba(0, 0, 0, 0.72);
   border: 3.5px solid rgba(0, 255, 153, 0.12);
@@ -59,10 +68,6 @@ overflow-x:hidden;
   backdrop-filter: blur(14px);
   box-shadow: 0 0 35px rgba(0, 255, 153, 0.08);
   animation: heroFloat 6s ease-in-out infinite;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 @keyframes heroFloat {
