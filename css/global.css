@@ -1,0 +1,146 @@
+body{
+
+margin:0;
+
+background:#050505;
+
+color:white;
+
+font-family:
+Inter,
+Arial,
+sans-serif;
+
+overflow-x:hidden;
+
+}
+
+.background-grid {
+  position:fixed;
+  inset:0;
+  background-image:
+  linear-gradient(rgba(0,255,153,0.07) 1px, transparent 1px),
+  linear-gradient(90deg, rgba(0,255,153,0.07) 1px, transparent 1px);
+  background-size:120px 120px;
+  z-index:-3;
+  pointer-events:none;
+}
+
+.background-glow {
+  position:fixed;
+  border-radius:50%;
+  filter:blur(120px);
+  opacity:0.22;
+  pointer-events:none;
+  z-index:-2;
+}
+
+.glow1 {
+  width:500px;
+  height:500px;
+  background:#00ff99;
+  top:-180px;
+  left:-180px;
+}
+
+.glow2 {
+  width:500px;
+  height:500px;
+  background:#00ff99;
+  right:-180px;
+  bottom:-180px;
+}
+
+.hero-card {
+  background: rgba(0, 0, 0, 0.72);
+  border: 3.5px solid rgba(0, 255, 153, 0.12);
+  border-radius: 30px;
+  text-align: center;
+  backdrop-filter: blur(14px);
+  box-shadow: 0 0 35px rgba(0, 255, 153, 0.08);
+  animation: heroFloat 6s ease-in-out infinite;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes heroFloat {
+0% {
+  transform:
+  translateY(0px);
+ }
+50% {
+  transform:
+  translateY(-6px);
+ }
+100% {
+  transform:
+  translateY(0px);
+ }
+}
+
+.section-eyebrow {
+color:#00ff99;
+letter-spacing:10px;
+font-size:0.85rem;
+margin-bottom:22px;
+}
+
+.hero-title {
+background: linear-gradient(to right, #004d20, #008f39, #00ff66, #008f39, #004d20);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+text-fill-color: transparent;
+font-size:clamp(4rem, 14vw, 8rem);
+background-size: 200% auto;
+line-height:1.05;
+margin-bottom:28px;
+animation: move-gradient 2s linear infinite;
+}
+
+@keyframes move-gradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.hero-description {
+font-size:1.2rem;
+line-height:1.8;
+max-width:850px;
+color:#d0d0d0;
+margin-bottom:50px;
+}
+
+.hero-description a {
+  background: linear-gradient(to right, #004d20, #008f39, #00ff66, #008f39, #004d20);
+  -webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+text-decoration: none;
+background-size: 200% auto
+}
+
+.hero-buttons {
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.primary-button {
+padding: 22px 34px;
+border-radius:22px;
+font-size:1rem;
+font-weight:700;
+text-decoration:none;
+transition:0.25s;
+display:flex;
+align-items:center;
+justify-content:center;
+
+}
